@@ -1,0 +1,185 @@
+/* Fundo azul escuro para a página principal */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000080;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: gold;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Fundo ciano para a página de agradecimento */
+
+.thank-you-page {
+    background-color: #25234c;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container principal */
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    /* Adiciona um pouco de espaço interno */
+    box-sizing: border-box;
+    /* Inclui padding na largura total */
+}
+
+
+/* Cartão de mensagem */
+
+.card {
+    background: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+    color: gold;
+}
+
+
+/* Estilo dos motivos para perdoar */
+
+.reasons {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.reasons h3 {
+    text-align: center;
+}
+
+.reasons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons li {
+    margin: 5px 0;
+    padding: 5px;
+    background: rgba(255, 215, 0, 0.2);
+    border-radius: 5px;
+    border: 2px solid gold;
+}
+
+
+/* Galeria de fotos */
+
+.photo-gallery {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.5);
+}
+
+
+/* Estilo do iframe da música */
+
+.music-iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 80px;
+    /* Altura reduzida para o iframe */
+    max-width: 400px;
+    /* Limita a largura máxima do iframe */
+    margin: 0 auto;
+    /* Centraliza o iframe */
+}
+
+
+/* Botões */
+
+.question {
+    margin-top: 20px;
+}
+
+button {
+    background: gold;
+    color: navy;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    /* Botões ocupam toda a largura disponível */
+    max-width: 200px;
+    /* Limita a largura máxima dos botões */
+}
+
+button:hover {
+    background: #ffd700;
+}
+
+
+/* Centralizando as estrelas no topo */
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* Distribuindo as imagens ao redor da mensagem */
+
+.thank-you-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+/* Aumentando o tamanho das imagens */
+
+.small-img {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* Responsividade para telas menores */
+
+@media (max-width: 600px) {
+    .photo-gallery img {
+        width: 80px;
+        /* Reduz o tamanho das imagens na galeria em telas menores */
+        height: 80px;
+    }
+    .music-iframe {
+        height: 60px;
+        /* Reduz a altura do iframe em telas menores */
+    }
+    button {
+        padding: 8px;
+        /* Ajusta o padding dos botões em telas menores */
+    }
+}
